@@ -1,0 +1,10 @@
+{
+  "name": "contact-api",
+  "version": "1.0.0",
+  "description": "Rest API for managing your contacts",
+  "main": "dist/src/server.js",
+  "repository": "git@github.com:MelkdeSousa/contact-api.git",
+  "author": "melkdesousa <melk.sousap@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
