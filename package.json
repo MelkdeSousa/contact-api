@@ -9,7 +9,10 @@
   "private": false,
   "scripts": {
     "start": "node ./dist/src/server.js",
-    "dev": "tsnd --respawn --transpile-only --ignore-watch node_modules --watch *.ts src/server.ts"
+    "dev": "tsnd --respawn --transpile-only --ignore-watch node_modules --watch *.ts src/server.ts",
+    "knex:migrate:make": "knex --knexfile src/database/knexfile.ts migrate:make -x ts",
+    "knex:migrate:latest": "knex --knexfile src/database/knexfile.ts migrate:latest",
+    "knex:migrate:rollback": "knex --knexfile src/database/knexfile.ts migrate:rollback"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
