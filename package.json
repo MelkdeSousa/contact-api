@@ -7,6 +7,10 @@
   "author": "melkdesousa <melk.sousap@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "start": "node ./dist/src/server.js",
+    "dev": "tsnd --respawn --transpile-only --ignore-watch node_modules --watch *.ts src/server.ts"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
