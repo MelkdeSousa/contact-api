@@ -1,14 +1,15 @@
 import { Knex } from 'knex'
 
-import { MYSQL_DATABASE, MYSQL_PASSWORD, MYSQL_USER } from '../config/environment'
+import { MYSQL_HOST, MYSQL_DATABASE, MYSQL_PASSWORD, MYSQL_USER, MYSQL_PORT } from '../config/environment'
 
 const config: Knex.Config = {
   client: 'mysql2',
   connection: {
-    host: '127.0.0.1',
+    host: MYSQL_HOST,
     user: MYSQL_USER,
     password: MYSQL_PASSWORD,
-    database: MYSQL_DATABASE
+    database: MYSQL_DATABASE,
+    port: MYSQL_PORT
   },
   migrations: {
     tableName: 'knex_migrations',
