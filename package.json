@@ -9,6 +9,8 @@
   "private": false,
   "scripts": {
     "start": "node ./dist/src/server.js",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
     "dev": "tsnd --respawn --transpile-only --ignore-watch node_modules --watch *.ts src/server.ts",
     "knex:migrate:make": "knex --knexfile src/database/knexfile.ts migrate:make -x ts",
     "knex:migrate:latest": "knex --knexfile src/database/knexfile.ts migrate:latest",
