@@ -4,6 +4,7 @@ import { MYSQL_HOST, MYSQL_DATABASE, MYSQL_PASSWORD, MYSQL_USER, MYSQL_PORT } fr
 
 const config: Knex.Config = {
   client: 'mysql2',
+  dialect: 'mysql',
   connection: {
     host: MYSQL_HOST,
     user: MYSQL_USER,
