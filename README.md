@@ -1,6 +1,6 @@
 <div align="center">
 
-<img alt="banner contact api" src="./.github/banner.gif" width="50%" height="auto" style="border-radius: 20%">
+<img alt="banner contact api" src="./.github/banner.gif" width="30%" height="auto" style="border-radius: 20%">
 
 # Contact API
 
