@@ -1,4 +1,10 @@
+<div align="center">
+
+<img alt="banner contact api" src="./.github/banner.gif" width="50%" height="auto" style="border-radius: 20%">
+
 # Contact API
+
+</div>
 
 > Rest API for manage and make available an agenda of people's contacts
 
