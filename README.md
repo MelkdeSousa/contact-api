@@ -8,7 +8,11 @@
 
 > Rest API for manage and make available an agenda of people's contacts
 
-## Endpoints
+## 🖥️ Base URL
+
+- Version 1: `/api/v1/`
+
+## ↗️ Endpoints
 
 - User: `/users`
 
@@ -40,3 +44,49 @@
       }
       ```
   - ✔️ Delete user: `DELETE /users/<user_id>`
+
+## ⚠️ Requirements to start project
+
+- Git
+- Docker
+- Docker Compose
+- NodeJS
+- NPM/Yarn
+
+## 🎊 Get started
+
+- Clone repository:
+
+```bash
+git clone https://github.com/melkdesousa/contact-api.git
+```
+
+- Install dependencies:
+
+```bash
+yarn
+```
+
+or
+
+```bash
+npm -i
+```
+
+- Run container database and node:
+
+```bash
+yarn docker:up
+```
+
+- Access project:
+
+```bash
+http://localhost:3333/api/v1/
+```
+
+- Stop containers and all project:
+
+```bash
+yarn docker:down
+```
